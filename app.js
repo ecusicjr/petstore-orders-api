@@ -38,15 +38,17 @@ app.post('/orders', (req, res) => {
             let item = JSON.parse(body).body;
             let name = item.name;
             let price = item.price;
+            let cost = price * quantity;
 
-            orderTotal += price;
+            orderTotal += cost;
 
             productsOrdered.push(
                 {
                     "productId": productId,
                     "name": name,
                     "price": price,
-                    "quantity": quantity
+                    "quantity": quantity,
+                    "totalCost": cost
                 }
             )
 
@@ -54,10 +56,11 @@ app.post('/orders', (req, res) => {
                 productsOrdered.sort((a, b) => a.productId > b.productId);
                 let doc = {
                     "customerId": customerId,
-                    "orderTotal": orderTotal,
+                    "orderTotal": orderTotal.toFixed(2),
                     "productsOrdered": productsOrdered
                 }
                 db.insert(doc, function (err, newDoc) {
+                    res.status(201);
                     res.send(newDoc);
                 });
             }
@@ -66,3 +69,5 @@ app.post('/orders', (req, res) => {
 })
 
 app.listen(port, () => console.log(`Sample petstore orders API is listening on port ${port}!\n\nGithub: https://github.com/ecusicjr/petstore-orders-api`))
+
+module.exports = app;

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -13,12 +13,17 @@
   },
   "keywords": [
     "RESTful",
+    "REST",
     "api",
     "node",
     "npm",
     "express",
     "nedb",
-    "petstore"
+    "petstore",
+    "orders",
+    "mocha",
+    "chai",
+    "supertest"
   ],
   "author": "Eamon Cusic Jr",
   "license": "ISC",
@@ -27,8 +32,11 @@
   },
   "homepage": "https://github.com/ecusicjr/petstore-orders-api#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "express": "^4.16.4",
+    "mocha": "^6.0.2",
     "nedb": "^1.8.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "supertest": "^3.4.2"
   }
 }
