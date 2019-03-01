@@ -1,0 +1,28 @@
+{
+  "name": "petstore-orders-api",
+  "version": "1.0.0",
+  "description": "Simple petstore orders api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecusicjr/petstore-orders-api.git"
+  },
+  "keywords": [
+    "RESTful",
+    "api",
+    "node",
+    "npm",
+    "express",
+    "nedb",
+    "petstore"
+  ],
+  "author": "Eamon Cusic Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecusicjr/petstore-orders-api/issues"
+  },
+  "homepage": "https://github.com/ecusicjr/petstore-orders-api#readme"
+}
