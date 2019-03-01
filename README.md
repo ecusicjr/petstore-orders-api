@@ -10,6 +10,7 @@ Run "npm test"
 This API expects the following JSON order entry format:
 
 ```json
+{
     "customerId": "string",
     "items": [
         {

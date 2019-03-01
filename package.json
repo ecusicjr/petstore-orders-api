@@ -4,6 +4,7 @@
   "description": "Simple petstore orders api",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/ecusicjr/petstore-orders-api/issues"
   },
-  "homepage": "https://github.com/ecusicjr/petstore-orders-api#readme"
+  "homepage": "https://github.com/ecusicjr/petstore-orders-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
