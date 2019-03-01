@@ -9,7 +9,7 @@ Run "npm test"
 
 This API expects the following JSON order entry format:
 
-{
+```{
     "customerId": "string",
     "items": [
         {
@@ -17,7 +17,7 @@ This API expects the following JSON order entry format:
             "quantity": 0
         }
     ]
-}
+}```
 
 Existing Inventory API:
 The Inventory API that you will is used get item details is:
