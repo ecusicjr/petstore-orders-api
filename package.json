@@ -27,6 +27,8 @@
   },
   "homepage": "https://github.com/ecusicjr/petstore-orders-api#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nedb": "^1.8.0",
+    "request": "^2.88.0"
   }
 }
