@@ -23,7 +23,7 @@ This API expects the following JSON order entry format at /orders and runs on po
 }
 ```
 
-Existing Inventory API:
+Existing Inventory API: 
 The Inventory API that is used get item details is:
 https://vrwiht4anb.execute-api.us-east-1.amazonaws.com/default/product/{id}
 
